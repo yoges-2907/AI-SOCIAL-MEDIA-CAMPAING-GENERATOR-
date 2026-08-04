@@ -1,14 +1,37 @@
-# Secret Keys (CRITICAL)
+# Python virtual environment
+backend/.venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables (keep API keys secret)
+backend/.env
 .env
 
-# Virtual Environments
-.venv/
-venv/
+# SQLite database
+backend/database/*.db
 
-# Local Databases & AI Memory
-ai_media.db
-chroma_db/
+# Generated images and uploads
+backend/storage/generated/*
+backend/storage/uploads/*
 
-# Python Cache Files
-__pycache__/
-*.pyc
+# Keep folders but ignore files inside them
+!backend/storage/generated/.gitkeep
+!backend/storage/uploads/.gitkeep
+
+# VS Code settings
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
