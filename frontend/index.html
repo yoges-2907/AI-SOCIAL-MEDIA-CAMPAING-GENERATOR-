@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Social Media Campaign Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>AI Social Media Campaign Generator</h1>
+      <p>Generate captions and AI posters from a single prompt</p>
+    </header>
+
+    <section class="form-section">
+      <textarea 
+        id="prompt"
+        placeholder="Create an Instagram post for a robotics workshop for final year ECE students..."
+      ></textarea>
+
+      <div class="options">
+        <select id="platform">
+          <option value="instagram">Instagram</option>
+          <option value="linkedin">LinkedIn</option>
+          <option value="facebook">Facebook</option>
+          <option value="twitter">X / Twitter</option>
+        </select>
+
+        <select id="tone">
+          <option value="professional">Professional</option>
+          <option value="student">student</option>
+          <option value="fresher">fresher</option>
+          <option value="general">general</option>
+        </select>
+      </div>
+
+      <button id="generateBtn"> Generate Post</button>
+    </section>
+
+    <section class="result-section">
+      <div class="image-card">
+        <h2>Generated Poster</h2>
+        <img id="preview" src="" alt="Generated poster will appear here" />
+        <button id="downloadBtn" disabled>⬇ Download Image</button>
+      </div>
+
+      <div class="caption-card">
+        <h2>Generated Caption</h2>
+        <div id="caption">
+          Your generated caption will appear here...
+        </div>
+
+        <button id="copyBtn">Copy Caption</button>
+      </div>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
