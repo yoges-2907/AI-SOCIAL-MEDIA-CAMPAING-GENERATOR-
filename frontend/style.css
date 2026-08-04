@@ -121,7 +121,7 @@ button {
   aspect-ratio: 1 / 1;
   object-fit: cover;
   display: block;
-  min-hight: 300px;
+  min-height: 300px;
   object-fit: cover;
   border-radius: 14px;
   border: 1px solid #334155;
@@ -201,7 +201,7 @@ button {
 }
 
 .history-meta {
-  front-size:13px;
-  colour: #94a3b8;
+  font-size:13px;
+  color: #94a3b8;
   font-style: italic;
 }

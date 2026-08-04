@@ -1,4 +1,9 @@
 import os
+import uuid
+from gemini import GeminiClient
+
+client = GeminiClient()
+
 def generate_image(prompt: str):
 
     try:
